@@ -1,0 +1,85 @@
+<!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>{{priceData.prc}}</h2>
+        <h3>{{priceData.chk}}<span>{{priceData.prcg}}</span></h3>
+        <p>{{priceData.pricePara}}</p>
+      </div>
+
+      <div class="row">
+
+        <div *ngFor = "let priceInfo of priceData.price" class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="box">
+            <h3>{{priceInfo.priceH}}</h3>
+            <h4><sup>{{priceInfo.dol}}</sup>{{priceInfo.zero}}<span>{{priceInfo.mnth}}</span></h4>
+            <ul>
+              <li>{{priceInfo.priceLi}}</li>
+              <li>{{priceInfo.priceLi2}}</li>
+              <li>{{priceInfo.priceLi3}}</li>
+              <li class="na">{{priceInfo.priceLi4}}</li>
+              <li class="na">{{priceInfo.priceLi5}}</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">{{priceInfo.buy}}</a>
+            </div>
+          </div>
+        </div>
+
+        <!--<div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="box featured">
+            <h3>Business</h3>
+            <h4><sup>$</sup>19<span> / month</span></h4>
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li>Pharetra massa</li>
+              <li class="na">Massa ultricies mi</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <div class="box">
+            <h3>Developer</h3>
+            <h4><sup>$</sup>29<span> / month</span></h4>
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li>Pharetra massa</li>
+              <li>Massa ultricies mi</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+          <div class="box">
+            <span class="advanced">Advanced</span>
+            <h3>Ultimate</h3>
+            <h4><sup>$</sup>49<span> / month</span></h4>
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li>Pharetra massa</li>
+              <li>Massa ultricies mi</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>-->
+
+      </div>
+
+    </div>
+  </section><!-- End Pricing Section -->

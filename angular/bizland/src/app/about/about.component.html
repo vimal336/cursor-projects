@@ -1,0 +1,44 @@
+<!-- ======= About Section ======= -->
+<section id="about" class="about section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>{{aboutData.ab}}</h2>
+        <h3>{{aboutData.fom}}<span>{{aboutData.au}}</span></h3>
+        <p>{{aboutData.aboutp}}</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <img src="assets/img/about.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <h3>{{aboutData.abouth3}}</h3>
+          <p class="fst-italic">
+            {{aboutData.aboutp2}}
+          </p>
+          <ul>
+            <li *ngFor = "let aboutInfo of aboutData.abt ">
+              <i class="bx bx-store-alt"></i>
+              <div>
+                <h5>{{aboutInfo.about}}</h5>
+                <p>{{aboutInfo.aboutPara}}</p>
+              </div>
+            </li>
+            <!--<li>
+              <i class="bx bx-images"></i>
+              <div>
+                <h5>{{aboutInfo.about}}</h5>
+                <p>{{aboutInfo.aboutPara}}</p>
+              </div>
+            </li>-->
+          </ul>
+          <p>
+           {{aboutData.aboutp5}}
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+

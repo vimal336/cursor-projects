@@ -1,0 +1,76 @@
+<!-- ======= Frequently Asked Questions Section ======= -->
+<section id="faq" class="faq section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>{{faqData.faqh}}</h2>
+        <h3>{{faqData.faq2h}}<span>{{faqData.ques}}</span></h3>
+        <p>{{faqData.faqp}}</p>
+        
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <ul class="faq-list">
+
+            <li *ngFor = "let faqInfo of faqData.questi" >
+              <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">{{faqInfo.question}} <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+              <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                 {{faqInfo.answer}}
+                </p>
+              </div>
+            </li>
+
+            <!--<li>
+              <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">{{question}}<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+              <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+               {{answer}}
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div data-bs-toggle="collapse" href="#faq3" class="collapsed question"> {{question}}<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+              <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  {{answer}}
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">{{question}}<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+              <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  {{answer}}
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">{{question}} <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+              <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                {{answer}}
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">{{question}}<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+              <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                 {{answer}}
+                </p>
+              </div>
+            </li>-->
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Frequently Asked Questions Section -->
+
